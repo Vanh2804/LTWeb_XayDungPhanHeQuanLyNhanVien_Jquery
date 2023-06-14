@@ -1,0 +1,12 @@
+﻿body {
+    margin: 0;
+}
+
+.block{
+    background-color: aqua;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left:400px;
+    margin-top: 200px;
+}

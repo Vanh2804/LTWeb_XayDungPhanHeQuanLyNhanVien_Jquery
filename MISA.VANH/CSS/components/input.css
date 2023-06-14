@@ -1,0 +1,50 @@
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 100%;
+}
+
+.input-wrapper input{
+    height: 36px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 12px;
+}
+
+input:focus{
+    border-color: #66AFFF;
+}
+
+.input-wrapper .input-gender{
+    display: flex;
+    align-items: center;
+}
+
+select{
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 4px;
+    padding: 0 12px;
+}
+
+select:focus{
+    border-color: #66AFFF;
+}
+
+.input_search{
+    height: 36px;
+    width: 280px;
+    outline: none;
+    border: 1px solid #E0E1E4;
+    /* border-radius: 4px 0px 0px 4px;
+    border-right: none; */
+    border-radius: 4px;
+}
+
+.input-checkbox{
+    height: 24px;
+    width: 24px;
+}

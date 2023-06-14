@@ -1,0 +1,220 @@
+.table-wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    position: relative;
+}
+
+.table_toolbar{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 12px;
+    margin-bottom: 0;
+}
+
+.table_toolbar.box_search{
+    height: 36px;
+    width: 280px;
+}   
+
+
+.table{
+    max-height: calc(100% - 56px);
+    width: 100%;
+    height: calc(100% - 115px);
+    /* height: 492px; */
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}   
+
+.m-table{
+    
+    min-width: max-content;
+    border-spacing: unset;
+    position: relative;
+}
+
+.m-table thead{
+    position: sticky;
+    top: 0;
+    background-color: #E6F2FF !important;
+}
+
+.m-table th{
+    border-left: 1px solid #E0E0E0 ;
+}
+
+/* .checkbox-sticky{
+    position: sticky;
+    left: 0;
+} */
+
+.m-table tr{
+    border: 1px solid #E0E0E0;
+    height: 48px;
+}
+
+.m-table tr td, th{
+    padding-left: 14px;
+    padding-right: 10px;
+}
+
+.m-table tr td{
+    border-left: 1px solid #E0E0E0;
+}
+
+.m-table .text-align-left{
+    text-align: left;
+}
+.m-table .text-align-right{
+    text-align: right;
+}
+.m-table .text-align-center{
+    text-align: center;
+}
+
+.m-table tbody tr:hover{
+    background-color: #E6F2FF;
+    z-index: 1;
+}
+
+.m-table tbody tr.m-row-selected{
+    background-color: #CCE4FF;
+}
+
+.m-table tbody tr .m-dropdown{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    justify-content: end;
+    cursor: pointer;
+    position: relative !important;
+    outline: unset;
+}
+
+.m-table tbody tr .m-dropdown .m-btn-fix{
+    height: 24px;
+    width: 24px;
+    outline: unset;
+    border: unset;
+    background-color: unset;
+    cursor: pointer;
+    position: relative;
+}
+
+    .m-table tbody tr .m-dropdown .m-btn-fi:hover {
+        border: 1px solid #E0E0E0;
+    }
+
+    .m-table tbody tr .m-fix-options {
+        height: 90px;
+        width: 120px;
+        position: absolute;
+        right: 8px;
+        top: 32px;
+        row-gap: 0;
+        border: 1px solid #E0E0E0;
+        background-color: #fff;
+        z-index: 50;
+    }
+
+.m-table tbody tr .m-fix-options .fix-option{
+    height: 30px;
+    width: calc(120px - 8px);
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    position: relative;
+    background-color: #fff; 
+}
+.m-table tbody tr .m-fix-options .fix-option:hover{
+    background-color: #E6F2FF;
+    color: #004999;
+    z-index: 5;
+}
+
+
+.m-table tbody tr input{
+    height: 24px;
+    width: 24px;
+}
+th{
+    position: relative;
+    background-color: #E6F2FF
+}
+thead:has(.importain-active){
+    z-index: 10;
+}
+tr, td{
+    position: relative;
+}
+tr:has(.active){
+    z-index: 1;
+}
+.table_padding{
+    width: 100%;
+    height: 56px;
+    background-color: #F5F5F5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.table_padding .table-padding_left{
+    margin-left: 16px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.table_padding .table-padding_right{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    column-gap: 16px;
+}
+
+    .table_padding .table-padding_right .m-btn-first {
+        height: 24px;
+        width: 24px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -30px -357px;
+        background-repeat: no-repeat;
+        border: unset;
+        cursor: pointer;
+        background-color: #F5F5F5;
+    }
+
+    .table_padding .table-padding_right .m-btn-next {
+        height: 24px;
+        width: 24px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -76px -357px;
+        background-repeat: no-repeat;
+        border: unset;
+        cursor: pointer;
+        background-color: #F5F5F5;
+    }
+
+.table_padding .table-padding_right .m-page-number-group button.m-page-selected{
+    border: 1px solid #E0E0E0 !important;
+    font-weight: bold;
+}
+
+.table_padding .table-padding_right .m-page-number-group .m-page-number{
+    outline: none;
+    border: none;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}

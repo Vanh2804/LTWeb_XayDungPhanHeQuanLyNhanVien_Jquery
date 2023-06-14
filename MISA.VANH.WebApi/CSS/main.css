@@ -1,0 +1,121 @@
+@import url(./components/button.css);
+@import url(./components/input.css);
+@import url(./components/table.css);
+@import url(./components/popup.css);
+@import url(components/toast.css);
+@import url(components/icon.css);
+@import url(components/dialog.css);
+
+
+@import url(./layout/content.css);
+@import url(./layout/header.css);
+@import url(./layout/menu.css);
+
+
+@import url(./view/employee.css);
+
+
+body{
+    margin: 0;
+    font-size: 14px;
+    font-family: vanh;
+}
+
+@font-face {
+    font-family: vanh;
+    src: url(../content/font/GoogleSans-Regular.otf);
+}
+
+.m-flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.m-col-gap-8{
+    column-gap: 8px;
+}
+
+.required{
+    color: red;
+}
+
+.required-error {
+    border: 1px solid red !important;
+}
+
+.m-row+.m-row{
+    margin-top: 14px;
+}
+
+.form-message {
+    color: #f33a58;
+    margin-bottom: 0;
+}
+
+.invalid{
+    border-color: #f33a58 !important;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 46.187em) {
+    #menu {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        /*padding: 0;*/
+    }
+
+    .header-left {
+        display: none;
+    }
+
+    .header-right {
+        width: 100%;
+    }
+
+    .input_search {
+        width: 200px;
+    }
+    .table-padding_right{
+        display: none!important;
+    }
+    .header-right .header-right_r .noti{
+        display: none;
+    }
+    .header-right .header-right_l .select{
+        display: none;
+    }
+    .page_content {
+        
+    }
+    .popup-form{
+        width: 400px;
+    }
+    .employee-info{
+        flex-direction: column;
+    }
+    .popup_header .popup_header-detail {
+        display: none;
+    }
+    .contact-info{
+        display: none;
+    }
+    .input-wrapper{
+        width: 100% !important;
+    }
+    #IdentityNumber{
+        width: auto !important;
+    }
+    #FullName{
+        width: auto !important;
+    }
+}
+/*Tablet*/
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em){
+
+}

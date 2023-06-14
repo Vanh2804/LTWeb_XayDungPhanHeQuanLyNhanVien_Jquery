@@ -1,0 +1,70 @@
+.toast-list {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+  }
+  .toast {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.078);
+    height: 56px;
+    justify-content: space-between;
+    column-gap: 92px;
+  }
+  .toast__left {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 14px;
+  }
+  .toast__right {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  .toast__undo {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #1f1f1f;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .toast + .toast {
+    margin-top: 10px;
+  }
+.toast__icon {
+    background-size: 20px 20px;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background-image: url(/content/icon/warning.png);
+    height: 20px;
+    width: 20px;
+}
+  .toast__icon--warning {
+    color: #f49342;
+  }
+  .toast__icon--error {
+    color: #de3618;
+  }
+  .toast__icon--info {
+    color: #50b83c;
+  }
+  .toast__text {    
+
+  }
+  .toast__button {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  .toast-close__btn {
+    width: 16px;
+  }

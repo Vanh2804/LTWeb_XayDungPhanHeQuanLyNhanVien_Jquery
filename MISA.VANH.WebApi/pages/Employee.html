@@ -1,0 +1,390 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link href="../CSS/main.css" rel="stylesheet" />
+    <link href="../CSS/pages/Customer.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="sibar"></div>
+            <div class="logo"></div>
+            <span style="color: white; font-size: 16px; font-weight: bold;">KẾ TOÁN</span>
+        </div>
+        <div class="header-right">
+            <div class="header-right_l">
+                <div class="sibar"></div>
+                <span style="margin-left: 20px;">CÔNG TY TNHH SẢN XUẤT-THƯƠNG MẠI-DỊCH VỤ QUY PHÚC</span>
+                <div class="select"></div>
+            </div>
+            <div class="header-right_r">
+                <div class="noti"></div>
+                <button class="prf-header">
+                    <div class="avatar"></div>
+                    <div class="name">Hoàng Việt Anh</div>
+                    <div class="select"></div>
+                </button>
+            </div>
+        </div>
+    </header>
+    <menu id="menu">
+        <a href="Customer.html" class="menu-item">
+            <div class="menu-item_icon item-tongquan"></div>
+            <div class="menu-item_text">Tổng quan</div>
+        </a>
+        <a href="Employee.html" class="menu-item ">
+            <div class="menu-item_icon item-tienmat"></div>
+            <div class="menu-item_text">Tiền mặt</div>
+        </a>
+        <div class="menu-item">
+            <div class="menu-item_icon item-tiengui"></div>
+            <div class="menu-item_text">Tiền gửi</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-muahang"></div>
+            <div class="menu-item_text">Mua hàng</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-banhang"></div>
+            <div class="menu-item_text">Bán hàng</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-quanlyhoadon"></div>
+            <div class="menu-item_text">Quản lý hóa đơn</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-kho"></div>
+            <div class="menu-item_text">Kho</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-congcudungcu"></div>
+            <div class="menu-item_text">Công cụ dụng cụ</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-taisancodinh"></div>
+            <div class="menu-item_text">Tài sản cố định</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-thue"></div>
+            <div class="menu-item_text">Thuế</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-giathanh"></div>
+            <div class="menu-item_text">Giá thành</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-tonghop"></div>
+            <div class="menu-item_text">Tổng hợp</div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-item_icon item-ngansach"></div>
+            <div class="menu-item_text">Ngân sách</div>
+        </div>
+
+    </menu>
+    <div class="content">
+        <div class="page_header">
+            <div class="page-header_left">Nhân viên</div>
+            <div class="page-header_right">
+                <button id="btnAdd" class="btn btn-default">Thêm mới nhân viên</button>
+            </div>
+        </div>
+        <div class="page_content">
+            <div class="table-wrapper">
+                <div class="table_toolbar">
+                    <div class="box_search">
+                        <button class="btnsearch" id="btnSearch"></button>
+                        <input type="search" class="input_search" id="inputSearch" placeholder="Tìm theo mã, tên nhân viên">
+                    </div>
+                    <button class="btnrefresh" id="btnRefresh"></button>
+                </div>
+                <div class="table">
+                    <table class="m-table" id="table-list">
+                        <thead>
+                            <tr class="importain-active">
+                                <th class="text-align-center checkbox-sticky" type="checkbox">
+                                    <input type="checkbox" class="input-checkbox">
+                                </th>
+                                <th class="text-align-left" model-name="EmployeeID" style="display: none"></th>
+                                <th class="text-align-left" model-name="EmployeeCode">MÃ NHÂN VIÊN</th>
+                                <th class="text-align-left" model-name="FullName">TÊN NHÂN VIÊN</th>
+                                <th class="text-align-left" model-name="GenderName">GIỚI TÍNH</th>
+                                <th class="text-align-center" model-name="DateOfBirth">NGÀY SINH</th>
+                                <th class="text-align-left" model-name="IdentityNumber">SỐ CCCD</th>
+                                <th class="text-align-left" model-name="PositionName">CHỨC DANH</th>
+                                <th class="text-align-left" model-name="DepartmentName">TÊN ĐƠN VỊ</th>
+                                <th class="text-align-left" model-name="PersonalTaxCode">SỐ TÀI KHOẢN</th>
+                                <th class="text-align-left" model-name="PhoneNumber">TÊN TÀI KHOẢN</th>
+                                <th class="text-align-left" model-name="IdentityPlace">CHI NHÁNH TK NGÂN HÀNG</th>
+                                <th class="text-align-left" type="options">CHỨC NĂNG</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td class="text-align-center checkbox-sticky">
+                                    <input type="checkbox" class="input-checkbox">
+                                </td>
+                                <td>Viet anh</td>
+                                <td>Viet anh</td>
+                                <td>
+                                    <button id="btnAn">Ẩn</button>
+                                </td>
+                                <td>
+                                    <div class="m-dropdown" id="btnDelete">
+                                        <span style="color: #3395FF;" >Xóa</span>
+                                        <button class="m-btn-fix item-fix" id="btnFix"></button>
+                                        <div class="m-fix-options active" id="m-fix-options-id" style="display: none;">
+                                            <div class="fix-option fix-option-nhanban">Nhân bản</div>
+                                            <div class="fix-option fix-option-xoa">Xóa</div>
+                                            <div class="fix-option fix-option-ngungsudung">Ngưng sử dụng</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table_padding">
+                    <div class="table-padding_left">Tổng số: <pre id="soBanGhi"> </pre> bản ghi</div>
+                    <div class="table-padding_right">
+                        <select name="" id="">
+                            <option value="">20 bản ghi trên 1 trang</option>
+                            <option value="">30 bản ghi trên 1 trang</option>
+                            <option value="">50 bản ghi trên 1 trang</option>
+                        </select>`
+                        <button class="m-btn-first"></button>
+                        <div class="m-page-number-group">
+                            <button class="m-page-number m-page-selected">1</button>
+                            <button class="m-page-number">2</button>
+                            <button class="m-page-number">3</button>
+                            <button class="m-page-number">•••</button>
+                            <button class="m-page-number">1</button>
+                        </div>
+                        <button class="m-btn-next"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup importain-active" id="frmDetail" style="display: none">
+        <div class="popup-form" id="frm-popup">
+            <button class="popup_button" id="btnClose"></button>
+            <div class="popup_header">
+                <h1>Thông tin nhân viên</h1>
+                <div class="popup_header-detail">
+                    <input type="radio" id="txtEmployeeCode" name="pr-detail">
+                    <label for="txtEmployeeCode" class="male">Là khách hàng</label>
+                    <input type="radio" id="txtEmployeeCode" name="pr-detail">
+                    <label for="txtEmployeeCode">Là nhà cung cấp</label>
+                </div>
+            </div>
+            <div class="popup_body">
+                <div class="employee-info">
+                    <div class="form-group general-info-left">
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper" style="width: 100px;">
+                                <label for="input_ma">Mã <span class="required">*</span></label>
+                                <input type="text" class="txtEmployeeCode check-required" id="EmployeeCode">
+                                <!--<span class="form-message" id="err-message"></span>-->
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_name">Tên <span class="required">*</span> </label>
+                                <input type="text" class="txtEmployeeCode check-required" id="FullName" style="width: calc(100% - 24px);">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_donvi">Dơn vị <span class="required">*</span> </label>
+                                <select id="DepartmentName">
+                                    <!-- <option selected></option> -->
+                                    <option>Ban giám đốc</option>
+                                    <option>Phòng nhân sự</option>
+                                    <option>Phòng quản lý</option
+                                    <option>Nhân viên</option>
+                                </select>
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_chucdanh">Chức danh</label>
+                                <input type="text" class="txtEmployeeCode" id="PositionName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group general-info-right">
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper" style=" width: calc(100% - 200px);">
+                                <label for="input_ngaysinh">Ngày sinh</label>
+                                <input type="date" class="txtEmployeeCode" id="DateOfBirth" >
+                                <span class="form-message"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input-gender">Giới tính</label>
+                                <div class="input-gender m-col-gap-8">
+                                    <input type="radio" id="GenderNam" value="Nam" name="gender">
+                                    <label for="txtEmployeeCode" class="male">Nam</label>
+                                    <input type="radio" id="GenderNu" value="Nữ" name="gender">
+                                    <label for="txtEmployeeCode">Nữ</label>
+                                    <input type="radio" id="GenderKhac" value="Khác" name="gender">
+                                    <label for="txtEmployeeCode">Khác</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_cccd" title="So can cuoc cong dan">Số CCCD</label>
+                                <input type="text" id="IdentityNumber" style="width: calc(100% - 24px);">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_ngaycapcccd">Ngày cấp</label>
+                                <input type="date" class="txtEmployeeCode" id="input_ngaycapcccd" style="width: calc(100% - 24px);">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                        <div class="m-row">
+                            <div class="input-wrapper">
+                                <label for="input_noicap">Nơi cấp</label>
+                                <input type="text" class="txtEmployeeCode" id="input_noicap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group contact-info">
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_diachi">Địa chỉ</label>
+                                <input type="text" class="txtEmployeeCode" id="input_diachi">
+                            </div>
+                        </div>
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_dtdd" title="So can cuoc cong dan">ĐT di động</label>
+                                <input type="text" class="txtEmployeeCode" id="input_dtdd">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_dtcodinh" title="So can cuoc cong dan">ĐT cố định</label>
+                                <input type="text" class="txtEmployeeCode" id="input_dtcodinh">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_email" title="So can cuoc cong dan">Email</label>
+                                <input type="text" class="txtEmployeeCode" id="input_email">
+                                <span class="form-message"></span>
+                            </div>
+                        </div>
+                        <div class="m-row m-flex m-col-gap-8">
+                            <div class="input-wrapper">
+                                <label for="input_tknh">Tài khoản ngân hàng</label>
+                                <input type="text" class="txtEmployeeCode" id="input_tknh">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_tennh">Tên ngân hàng</label>
+                                <input type="text" class="txtEmployeeCode" id="input_tennh">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="input_chinhanh">Chi nhánh</label>
+                                <input type="text" class="txtEmployeeCode" id="input_chinhanh">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup_footer">
+                <div class="footer_left">
+                    <!--<button class="btn" id="btnCancel">Xóa</button>-->
+                </div>
+                <div class="footer_right">
+                    <button class="btn" id="btnEdit-employee">Cất</button>
+                    <button class="btn btn-default" id="btn-insert-employee">Cất và thêm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-list" hidden>
+        <div class="toast toast__icon--warning">
+            <div class="toast__left">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="toast__text">Cảnh báo có lỗi !</div>
+            </div>
+            <div class="toast__right">
+                <div class="toast__undo">Hoàn tác</div>
+                <div class="toast__button">
+                    <img src="../content/icon/Layer 2.svg" alt="" class="toast-close__btn" />
+                </div>
+            </div>
+        </div>
+
+        <div class="toast toast__icon--warning">
+            <div class="toast__left">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="toast__text">Cảnh báo có lỗi !</div>
+            </div>
+            <div class="toast__right">
+                <div class="toast__undo">Hoàn tác</div>
+                <div class="toast__button">
+                    <img src="../content/icon/Layer 2.svg" alt="" class="toast-close__btn" />
+                </div>
+            </div>
+        </div>
+
+        <div class="toast toast__icon--warning">
+            <div class="toast__left">
+                <div class="toast__icon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <div class="toast__text">Cảnh báo có lỗi !</div>
+            </div>
+            <div class="toast__right">
+                <div class="toast__undo">Hoàn tác</div>
+                <div class="toast__button">
+                    <img src="../content/icon/Layer 2.svg" alt="" class="toast-close__btn" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="dialog" id="dialog-show" style="display: none;">
+        <div class="dialog-form dialog-erorr" style="display: none;">
+            <div class="dialog-content">
+                <div class="dialog-icon item-error"></div>
+                <div class="dialogdescribe" style="width: 300px;"></div>
+            </div>
+            <button class="btn btn-default btnAccess">Đồng ý</button>
+        </div>
+        <div class="dialog-form dialog-warring-delete" id="dialog-Delete" style="display: none;">
+            <div class="dialog-content">
+                <div class="dialog-icon item-warring"></div>
+                <div id="dialog-describe" style="width: 300px;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin: 0 24px;">
+                <button class="btn btnClost" id="btnNo">Không</button>
+                <button class="btn btn-default btnAccess" id="btnYes">Đồng ý</button>
+            </div>
+        </div>
+        <div class="dialog-form dialog-warring-fix" style="display: none;">
+            <div class="dialog-content">
+                <div class="dialog-icon item-warring"></div>
+                <div class="dialogdescribe" style="width: 300px;"></div>
+            </div>
+            <button class="btn btn-default btnClose" style="margin-left: 160px;">Đồng ý</button>
+        </div>
+    </div>
+
+
+
+    <script src="../JS/jquery-3.6.4.min.js"></script>
+    <script src="../JS/Employee.js" asp-append-version="true"></script>
+</body>
+</html>

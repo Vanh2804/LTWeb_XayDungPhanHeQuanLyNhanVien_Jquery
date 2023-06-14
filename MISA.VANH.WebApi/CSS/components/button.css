@@ -1,0 +1,52 @@
+.btn{
+    height: 36px;
+    border-radius: 4px;
+    border: unset;
+    cursor: pointer;
+    padding: 0 12px;
+    min-width: 80px;
+    outline: unset;
+}
+
+
+.btn-default{
+    background-color: #3395FF !important;
+    color: #ffffff !important;
+}
+
+.btn:hover, .btn-default:focus{
+    background-color: #66AFFF !important;
+}
+
+.btnsearch {
+    height: 24px;
+    width: 24px;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+    border: 1px solid #E0E1E4;
+    border-left: none;
+    background-color: #fff;
+    background-image: url(/content/icon/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    right: 95px;
+    top: 140px;
+}
+
+.btnrefresh {
+    height: 36px;
+    width: 36px;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    background-image: url(/content/img/Sprites.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: -1017px -23px;
+    background-color: #fff;
+    cursor: pointer;
+}
+

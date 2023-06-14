@@ -1,0 +1,94 @@
+.item-tongquan {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -30px -1628px;
+    background-repeat: no-repeat;
+}
+.item-tienmat {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -73px -1628px;
+    background-repeat: no-repeat;
+}
+.item-tiengui {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -117px -1628px;
+    background-repeat: no-repeat;
+}
+.item-muahang {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -161px -1628px;
+    background-repeat: no-repeat;
+}
+.item-banhang {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -204px -1628px;
+    background-repeat: no-repeat;
+}
+.item-quanlyhoadon {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -249px -1628px;
+    background-repeat: no-repeat;
+}
+.item-kho {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -291px -1628px;
+    background-repeat: no-repeat;
+}
+.item-congcudungcu {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -336px -1628px;
+    background-repeat: no-repeat;
+}
+.item-taisancodinh {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -378px -1628px;
+    background-repeat: no-repeat;
+}
+.item-thue {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -423px -1628px;
+    background-repeat: no-repeat;
+}
+.item-giathanh {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -467px -1628px;
+    background-repeat: no-repeat;
+}
+.item-tonghop {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -510px -1628px;
+    background-repeat: no-repeat;
+}
+.item-ngansach {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -378px -1660px;
+    background-repeat: no-repeat;
+}
+.item-baocao {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -547px -1628px;
+    background-repeat: no-repeat;
+}
+.item-phantichtaichinh {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -204px -1660px;
+    background-repeat: no-repeat;
+}
+
+.item-error {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -746px -456px;
+    background-repeat: no-repeat;
+}
+
+.item-warring {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -593px -456px;
+    background-repeat: no-repeat;
+}
+
+.item-fix {
+    background-image: url(/content/img/Sprites.svg);
+    background-position: -557px -355px;
+    background-repeat: no-repeat;
+}
+

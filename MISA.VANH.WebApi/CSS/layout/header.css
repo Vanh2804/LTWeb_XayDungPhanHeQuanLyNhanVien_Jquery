@@ -1,0 +1,125 @@
+header{
+    height: 56px;
+    width: 100%;
+    background-color: #FFFFFF;
+    float: left;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.header-left{
+    width: 200px;
+    height: 100%;
+    background-color: #001833;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+    .header-left .sibar {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        margin: 20px 16px 20px 20px;
+        background-image: url(/content/img/toggle.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header-left .logo {
+        height: 32px;
+        width: 32px;
+        margin-right: 8px;
+        background-image: url(/content/img/favicon.ico);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+.header-right{
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-right .header-right_l{
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    
+}
+
+    .header-right .header-right_l .sibar {
+        height: 24px;
+        width: 24px;
+        margin-left: 20px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -843px -30px;
+        background-repeat: no-repeat;
+    }
+
+    .header-right .header-right_l .select {
+        height: 16px;
+        width: 16px;
+        margin-left: 8px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -1128px -360px;
+        background-repeat: no-repeat;
+    }
+
+.header-right .header-right_r{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+    .header-right .header-right_r .noti {
+        height: 24px;
+        width: 24px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -787px -30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+.header-right .header-right_r .prf-header{
+    height: 36px;
+    border: #ffffff;
+    background-color: #ffffff;
+    margin-right: 24px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+}
+
+    .header-right .header-right_r .prf-header .avatar {
+        height: 36px;
+        width: 36px;
+        background-color: red;
+        border-radius: 50%;
+        background-image: url(/content/icon/avatar-default.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+.header-right .header-right_r .prf-header .name{
+    font-size: 14px;
+}
+
+    .header-right .header-right_r .prf-header .select {
+        height: 14px;
+        width: 14px;
+        background-image: url(/content/img/Sprites.svg);
+        background-position: -1128px -360px;
+        background-repeat: no-repeat;
+    }
